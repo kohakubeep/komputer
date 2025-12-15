@@ -14,7 +14,7 @@ body{
   font-family:'Segoe UI',sans-serif;
   padding:20px;
 }
-index.html
+
 .dashboard-header{
   background:#fff;
   border-radius:20px;
@@ -531,7 +531,7 @@ index.html
 window.addEventListener('DOMContentLoaded', () => {
   const adminSession = JSON.parse(localStorage.getItem('adminSession'));
   if(!adminSession){
-    window.location.href = 'index.html';
+    window.location.href = 'LOGIN.html';
   }
 });
 
@@ -907,7 +907,7 @@ function logoutAdmin(){
     localStorage.removeItem('adminSession');
     showNotification('Logout berhasil', 'info');
     setTimeout(() => {
-      window.location.href = 'index.html';
+      window.location.href = 'LOGIN.html';
     }, 500);
   }
 }
